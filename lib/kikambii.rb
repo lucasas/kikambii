@@ -1,5 +1,5 @@
-require "kikambii/version"
-
 module Kikambii
-  # Your code goes here...
 end
+
+require "kikambii/version"
+require "kikambii/feature"

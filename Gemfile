@@ -7,5 +7,6 @@ gem 'rake'
 
 group :test do
   gem 'rspec'
+  gem 'guard-rspec'
   gem 'toleman'
 end
