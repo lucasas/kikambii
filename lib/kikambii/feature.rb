@@ -5,7 +5,7 @@ class Kikambii::Feature
   attr_reader :attemps, :feature, :runner, :scenarios
 
   def initialize(dependencies)
-    @feature, @scenarios, @runner, @attemps = dependencies[:feature], dependencies[:scenarios], dependencies[:runner], 1
+    @feature, @scenarios, @runner, @attemps = dependencies[:feature], dependencies[:scenarios], dependencies[:runner], 0
   end
 
   def run

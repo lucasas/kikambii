@@ -15,7 +15,7 @@ describe Kikambii::Feature do
 
     it "should increment attemps number" do
       subject.run
-      subject.attemps.should == 2
+      subject.attemps.should == 1
     end
 
     context "when all runs were true" do
