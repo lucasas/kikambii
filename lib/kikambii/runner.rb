@@ -1,5 +1,5 @@
 class Kikambii::Runner
-  def run(command)
-    system command
+  def run(feature)
+    system "bundle exec cucumber #{feature} -f pretty"
   end
 end
