@@ -34,6 +34,10 @@ describe Kikambii::FeatureFactory do
     context "features with scenarios" do
       subject { described_class.new failures: "features/article_images.feature:5:20:35" }
 
+      it "should return features" do
+        subject.features.first.feature.should == "features/article_images.feature"
+      end
+
       it "should return features setting scenarios" do
         subject.features.first.scenarios.should == ["5", "20", "35"]
       end
