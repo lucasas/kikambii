@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Kikambii::VERSION
   gem.authors       = ["Lucas Souza"]
   gem.email         = ["lasouza@sp.r7.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = ""
+  gem.summary       = ""
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
