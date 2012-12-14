@@ -61,4 +61,25 @@ describe Kikambii::Feature do
       end
     end
   end
+
+  describe "#fail?" do
+    context "when attemps sold up" do
+
+      context "and there are scenarios to run" do
+        before do
+          subject.instance_variable_set "@scenarios", ["1"]
+        end
+
+        it { subject.fail?.should be_true }
+      end
+
+      context "and there aren't scenarios to run" do
+        before do
+          subject.instance_variable_set "@scenarios", []
+        end
+
+        it { subject.fail?.should be_false }
+      end
+    end
+  end
 end

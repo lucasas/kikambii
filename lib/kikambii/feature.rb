@@ -17,6 +17,10 @@ class Kikambii::Feature
     @scenarios.empty?
   end
 
+  def fail?
+    @scenarios.any?
+  end
+
   private
 
   def command_for(scenario)
